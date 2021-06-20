@@ -36,7 +36,9 @@ class App extends Component {
           const dBankAddress = dBank.networks[netId].dBankAddress
           const tokenBalance = await token.methods.balanceOf(this.state.account).call()
           const tokenBalanceDisplay = web3.utils.fromWei(tokenBalance)
-          this.setState({ token: token, dbank: dbank, dBankAddress: dBankAddress, tokenBalanceDisplay })
+          const etherBalance = await web3.eth.getBalance(accounts[0])
+          const etherBalanceDisplay = await web3.utils.fromWei(etherBalance)
+          this.setState({ token: token, dbank: dbank, dBankAddress: dBankAddress, tokenBalanceDisplay, etherBalanceDisplay })
           console.log(dBankAddress)
         } catch (e) {
           console.log('Error', e)
@@ -61,6 +63,7 @@ class App extends Component {
     if(this.state.dbank!=='undefined'){
       try{
         await this.state.dbank.methods.deposit().send({ value: amount.toString(), from: this.state.account })
+        await this.loadBlockchainData()
       } catch (e) {
         console.log('error, deposit: ', e)
       }
@@ -72,6 +75,7 @@ class App extends Component {
     if(this.state.dbank!=='undefined'){
       try{
         await this.state.dbank.methods.withdraw().send({ from: this.state.account })
+        await this.loadBlockchainData()
       } catch(e) {
         console.log('Error, withdraw: ', e)
       }
@@ -156,6 +160,7 @@ class App extends Component {
                 </div>
                 </Tab>
               </Tabs>
+              <p> Your account balance {this.state.etherBalanceDisplay}</p>
               <p className='mt-5'>Your Interest</p>
               <p>You have this many "Monkey coins" {this.state.tokenBalanceDisplay}</p>
               </div>
