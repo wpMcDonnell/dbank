@@ -13,6 +13,7 @@ contract dBank {
   mapping(address => bool) public isDeposited;
   //add events
   event Deposit(address indexed user, uint etherAmount, uint timeStart);
+  event Withdraw(address indexed user, uint etherAmount, uint depositTime, uint interest);
   //pass as constructor argument deployed Token contract
   constructor(Token _token) public {
     token = _token;
@@ -59,7 +60,7 @@ contract dBank {
     etherBalanceOf[msg.sender] = 0;
     isDeposited[msg.sender] = false;
     //emit event
-    emit withdraw(msg.sender, userBalance, depositTime, interest)
+    emit Withdraw(msg.sender, userBalance, depositTime, interest);
   }
 
   function borrow() payable public {
