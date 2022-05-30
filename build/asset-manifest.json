@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/dbank/static/css/main.d850c1a7.chunk.css",
+    "main.js": "/dbank/static/js/main.acd95de7.chunk.js",
+    "main.js.map": "/dbank/static/js/main.acd95de7.chunk.js.map",
+    "runtime-main.js": "/dbank/static/js/runtime-main.f33ada91.js",
+    "runtime-main.js.map": "/dbank/static/js/runtime-main.f33ada91.js.map",
+    "static/css/2.963765e0.chunk.css": "/dbank/static/css/2.963765e0.chunk.css",
+    "static/js/2.d1e50f86.chunk.js": "/dbank/static/js/2.d1e50f86.chunk.js",
+    "static/js/2.d1e50f86.chunk.js.map": "/dbank/static/js/2.d1e50f86.chunk.js.map",
+    "index.html": "/dbank/index.html",
+    "precache-manifest.289a19905803e207d79bc5976092b271.js": "/dbank/precache-manifest.289a19905803e207d79bc5976092b271.js",
+    "service-worker.js": "/dbank/service-worker.js",
+    "static/css/2.963765e0.chunk.css.map": "/dbank/static/css/2.963765e0.chunk.css.map",
+    "static/css/main.d850c1a7.chunk.css.map": "/dbank/static/css/main.d850c1a7.chunk.css.map",
+    "static/js/2.d1e50f86.chunk.js.LICENSE.txt": "/dbank/static/js/2.d1e50f86.chunk.js.LICENSE.txt",
+    "static/media/dbank.png": "/dbank/static/media/dbank.adca41d3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f33ada91.js",
+    "static/css/2.963765e0.chunk.css",
+    "static/js/2.d1e50f86.chunk.js",
+    "static/css/main.d850c1a7.chunk.css",
+    "static/js/main.acd95de7.chunk.js"
+  ]
+}
