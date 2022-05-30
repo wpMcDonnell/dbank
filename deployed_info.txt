@@ -1,0 +1,93 @@
+Compiling your contracts...
+===========================
+✔ Fetching solc version list from solc-bin. Attempt #1
+> Everything is up to date, there is nothing to compile.
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x8ffbccba6f7cd7b0a7dd34a0a64b6c2ec4cac29aef1f3d277a1df574c34df871
+   > Blocks: 1            Seconds: 8
+   > contract address:    0x054A955a7337D0BF59757AcA258678C99fc01Dd2
+   > block number:        10750745
+   > block timestamp:     1653679105
+   > account:             0x83ca0B46a5D5CeD7420285d1252d3348649bF5fC
+   > balance:             0.520499470556849227
+   > gas used:            188263 (0x2df67)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00376526 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 10750746)
+   > confirmation number: 2 (block: 10750747)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00376526 ETH
+
+
+2_deploy.js
+===========
+
+   Deploying 'Token'
+   -----------------
+   > transaction hash:    0x3a3ba3b72e26de92c48ac7ce941698c6eb3ddb8e3add7152315939962c5209a0
+   > Blocks: 1            Seconds: 16
+   > contract address:    0xeb543f8Dc38024eD44632F6dc5d292f2A247e0ba
+   > block number:        10750749
+   > block timestamp:     1653679165
+   > account:             0x83ca0B46a5D5CeD7420285d1252d3348649bF5fC
+   > balance:             0.492430450556849227
+   > gas used:            1357716 (0x14b794)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02715432 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 10750750)
+   > confirmation number: 2 (block: 10750751)
+
+   Deploying 'dBank'
+   -----------------
+   > transaction hash:    0xb68b7dff226182f736e9df3eb85abd60f1c2eb1c235df8660d5149587a8fce13
+   > Blocks: 0            Seconds: 12
+   > contract address:    0x6d12C77ABCBa1912214f2376D902E561f8B3439C
+   > block number:        10750752
+   > block timestamp:     1653679210
+   > account:             0x83ca0B46a5D5CeD7420285d1252d3348649bF5fC
+   > balance:             0.480560710556849227
+   > gas used:            593487 (0x90e4f)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01186974 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 10750753)
+   > confirmation number: 2 (block: 10750754)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.03902406 ETH
+
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.04278932 ETH
